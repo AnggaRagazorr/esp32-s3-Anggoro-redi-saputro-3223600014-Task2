@@ -13,7 +13,7 @@ Mengetes kontrol buzzer secara periodik menggunakan task FreeRTOS dengan pengatu
 ---
 
 ## Alur Program
-- **TaskBuzzer** dijalankan di **Core 0** dengan **prioritas 4**.  
+- **TaskBuzzer** dijalankan di **Core 0** dengan **prioritas 2**.  
 - Buzzer aktif selama 200 ms, lalu diam 1800 ms menggunakan `vTaskDelay()`.  
 - Frekuensi bunyi tidak dipengaruhi oleh task lain karena menggunakan delay non-blocking.
 
@@ -27,3 +27,4 @@ Mengetes kontrol buzzer secara periodik menggunakan task FreeRTOS dengan pengatu
 ## Kesimpulan
 - Task berprioritas menengah membuat buzzer tetap stabil.  
 - Tidak mengganggu task LED dengan prioritas lebih rendah.
+
