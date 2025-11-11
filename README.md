@@ -14,8 +14,8 @@ Tabel Pin Konfigurasi
 | LED Putih          | GPIO 7       | Output         |
 | LED Tosca          | GPIO 15      | Output         |
 | Buzzer             | GPIO 4       | Output         |
-| Button 1           | GPIO 18      | Input (PULLUP) |
-| Button 2           | GPIO 19      | Input (PULLUP) |
+| Button 1           | GPIO 19      | Input (PULLUP) |
+| Button 2           | GPIO 21      | Input (PULLUP) |
 | Potensiometer      | GPIO 5       | Analog Input   |
 | Servo              | GPIO 42      | PWM Output     |
 | Rotary Encoder CLK | GPIO 10      | Digital Input  |
