@@ -1,7 +1,7 @@
 # Percobaan Buzzer – FreeRTOS pada ESP32-S3
 
 ## Tujuan
-Percobaan ini bertujuan untuk menghasilkan bunyi buzzer secara periodik menggunakan FreeRTOS task tanpa menghambat proses lain.
+Mengetes kontrol buzzer secara periodik menggunakan task FreeRTOS dengan pengaturan prioritas dan core yang berbeda.
 
 ---
 
@@ -13,14 +13,9 @@ Percobaan ini bertujuan untuk menghasilkan bunyi buzzer secara periodik mengguna
 ---
 
 ## Alur Program
-1. **Inisialisasi Output**  
-   Pin buzzer diatur sebagai output.
-
-2. **Pembuatan Task Buzzer**  
-   Task dijalankan pada Core 0 dengan **prioritas 1** agar tidak mengganggu task interaktif seperti tombol.
-
-3. **Logika Bunyi**  
-   Buzzer menyala 200 ms dan mati 1800 ms menggunakan `vTaskDelay()` (non-blocking).
+- **TaskBuzzer** dijalankan di **Core 0** dengan **prioritas 4**.  
+- Buzzer aktif selama 200 ms, lalu diam 1800 ms menggunakan `vTaskDelay()`.  
+- Frekuensi bunyi tidak dipengaruhi oleh task lain karena menggunakan delay non-blocking.
 
 ---
 
@@ -30,5 +25,5 @@ Percobaan ini bertujuan untuk menghasilkan bunyi buzzer secara periodik mengguna
 ---
 
 ## Kesimpulan
-- Task berprioritas rendah cukup untuk menghasilkan output periodik.  
-- Delay non-blocking menjaga sistem tetap responsif terhadap task lain.
+- Task berprioritas menengah membuat buzzer tetap stabil.  
+- Tidak mengganggu task LED dengan prioritas lebih rendah.
