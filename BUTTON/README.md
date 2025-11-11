@@ -14,8 +14,8 @@ Menguji pembacaan dua tombol secara bersamaan menggunakan dua task berbeda denga
 ---
 
 ## Alur Program
-- **TaskButton1** dijalankan di **Core 1** dengan **prioritas 5**.  
-- **TaskButton2** juga di **Core 1** dengan **prioritas 5**.  
+- **TaskButton1** dijalankan di **Core 1** dengan **prioritas 3**.  
+- **TaskButton2** juga di **Core 1** dengan **prioritas 3**.  
 Keduanya memantau status tombol setiap 50 ms dan mencetak hasil ke Serial Monitor.
 
 ---
@@ -28,5 +28,6 @@ Keduanya memantau status tombol setiap 50 ms dan mencetak hasil ke Serial Monito
 ## Kesimpulan
 - Prioritas tinggi memastikan respon cepat pada input pengguna.  
 - Kedua tombol berfungsi simultan tanpa gangguan.
+
 
 
