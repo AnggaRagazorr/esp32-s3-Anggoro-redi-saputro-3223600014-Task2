@@ -21,11 +21,12 @@ Ketiga LED dihubungkan ke pin digital pada ESP32-S3, dengan resistor seri untuk 
 
 ## Struktur dan Penjelasan Task
 
-### Inisialisasi Pin
-
+### 1 Inisialisasi Pin
 Bagian ini digunakan untuk mendefinisikan ketiga pin LED sebagai output agar dapat dikontrol dengan `digitalWrite()`.
 
 ```cpp
 pinMode(LED_HIJAU, OUTPUT);
 pinMode(LED_PUTIH, OUTPUT);
 pinMode(LED_TOSCA, OUTPUT);
+
+### 2 Fungsi Utama Task
