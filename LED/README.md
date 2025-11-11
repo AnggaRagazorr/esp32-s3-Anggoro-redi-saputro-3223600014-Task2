@@ -47,7 +47,7 @@ Ketiga LED dikendalikan secara bersamaan melalui satu task yang berjalan di sala
 ---
 
 ## Hasil Percobaan
-![Hasil Simulasi LED](assests/LEDD.gif)
+![Hasil Simulasi LED](assets/LEDD.gif)
 
 Ketiga LED berkedip bersamaan setiap 500 milidetik.  
 Hasil percobaan menunjukkan bahwa baik Core 0 maupun Core 1 dapat menjalankan task LED tanpa perbedaan hasil secara fungsional.  
@@ -62,5 +62,6 @@ Perbedaannya hanya pada core tempat proses dieksekusi, yang dapat dilihat dari o
 4. Percobaan ini membuktikan bahwa ESP32-S3 mampu menjalankan multitasking nyata tanpa mengganggu proses utama sistem.
 
 ---
+
 
 
