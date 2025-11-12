@@ -27,20 +27,7 @@ Tabel Pin Konfigurasi
 | OLED SDA           | GPIO 8       | I²C SDA        |
 | OLED SCL           | GPIO 9       | I²C SCL        |
 
-Struktur Task dan Core Assignment
-| Task        | Fungsi                       | Core   | Priority | Keterangan                        |
-| ----------- | ---------------------------- | ------ | -------- | --------------------------------- |
-| TaskLED1    | Blink LED Hijau              | Core 0 | 1        | Nyala-mati cepat                  |
-| TaskLED2    | Blink LED Putih              | Core 1 | 2        | Nyala-mati sedang                 |
-| TaskLED3    | Blink LED Tosca              | Core 0 | 3        | Nyala-mati cepat                  |
-| TaskBuzzer  | Bunyikan buzzer tiap 2 detik | Core 0 | 4        | Aktif-mati bergantian             |
-| TaskButton1 | Deteksi tombol 1             | Core 1 | 5        | Tampilkan di Serial Monitor       |
-| TaskButton2 | Deteksi tombol 2             | Core 1 | 5        | Tampilkan di Serial Monitor       |
-| TaskPot     | Baca potensiometer           | Core 0 | 6        | Kirim nilai ke Serial Monitor     |
-| TaskServo   | Gerakkan servo 0°–180°       | Core 0 | 7        | Bergerak bolak-balik              |
-| TaskEncoder | Hitung putaran encoder       | Core 1 | 6        | Tampilkan nilai ke Serial Monitor |
-| TaskOLED    | Tampilkan data Pot & Encoder | Core 0 | 8        | Update layar tiap 0.5 s           |
-| TaskStepper | Putar stepper motor          | Core 1 | 4        | Rotasi berulang (tanpa driver)    |
+
 
 Penjelasan Mekanisme FreeRTOS
 1. xTaskCreatePinnedToCore()
